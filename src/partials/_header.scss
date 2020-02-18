@@ -1,26 +1,58 @@
-header .row-top {
-  height: 50px;
-  background-color: rgb(255,231,210);
-  line-height: 50px;
-  vertical-align: middle;
-  text-align: center;
-}
+header
+  .row-top {
+    height: $row-top-height;
+    background-color: rgb(255,231,210);
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+  }
     a {
       @include a_style;
       color: rgb(54,118,175);
-    }
+      }
     p {
       font-size: 15px;
       font-weight: 600;
       }
+  .wrapper {
+    width: $wrapper_width;
+    margin: auto;
+
+    .row-bottom {
+      width: $row-bottom-width;
+      height: $row-bottom-height;
+      border-bottom: 1px solid $primaryColor ;
+      line-height:$row-bottom-height;
+      margin: auto;
+
+      .left{
+
+        float: left;
+        img {
+          height: 35%;
+        }
+      }
+
+      .right {
+
+        float: right;
+        li {
+          display: inline-block;
+          list-style: none;
+        }
+
+      }
 
 
-  .row-bottom {
-    width: 65%;
-    height: 80px;
-    border-bottom: 1px solid grey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
+
+
+
+
+
+
+
+
+
+    }
+  }

@@ -1,4 +1,17 @@
-$body_fontColor: rgb(88,64,44);
+//colors
+$primaryColor: #58402B;
+$secondColor: #263971;
+$thirdColor: #ccc;
+
+
+
+// size
+$wrapper_width: 85%;
+$row-top-height: 50px;
+$row-bottom-height: 85px;
+$row-bottom-width: 85%;
+
+$jumbo_width: 70%;
 
 @mixin a_style {
   text-decoration: none;

@@ -1,0 +1,16 @@
+main {
+background-color: blue;
+  .jumbo {
+    background-color: yellow;
+    width: $jumbo_width;
+    &:after {
+    content: '';
+    display: table;
+    clear: both;
+    }
+
+  }
+
+
+
+}

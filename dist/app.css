@@ -8,6 +8,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header .row-top {
   height: 50px;
   background-color: #ffe7d2;
@@ -28,12 +34,48 @@ p {
   font-weight: 600;
 }
 
-.row-bottom {
-  width: 65%;
-  height: 80px;
-  border-bottom: 1px solid grey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.wrapper .row-bottom {
+  width: 85%;
+  height: 85px;
+  border-bottom: 1px solid #58402B;
+  line-height: 85px;
+  margin: auto;
+}
+
+.wrapper .row-bottom .left {
+  float: left;
+}
+
+.wrapper .row-bottom .left img {
+  height: 35%;
+}
+
+.wrapper .row-bottom .right {
+  float: right;
+}
+
+.wrapper .row-bottom .right li {
+  display: inline-block;
+  list-style: none;
+}
+
+main {
+  background-color: blue;
+}
+
+main .jumbo {
+  background-color: yellow;
+  width: 70%;
+}
+
+main .jumbo:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
